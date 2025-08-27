@@ -1,0 +1,248 @@
+/*Get poppins font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to right, purple, green, blue, white, yellow, orange, red);
+}
+
+
+h1, h2, h3, p{
+    color: white;
+}
+
+
+h1{
+    align-items: center;
+    font-size: 4em;
+    position: relative;
+    left: 30%;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+h2{
+    font-size: 3em;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+h3{
+    font-size: 2em;
+    padding: 5px;
+    margin: 5px;
+}
+
+h4{
+    font-size: 1em;
+    padding: 5px;
+    margin: 5px;
+}
+
+p{
+    font-size: 2em;
+    padding: 5px;
+    margin: 5px;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 10px;
+    border: white;
+}
+
+/*Bluetooth Car*/
+.ardbtcar{
+    position: relative;
+    left: 18%;
+    border-radius: 20px;
+}
+
+/*3D Printer*/
+.printer{
+    border-radius: 50%;
+    left: 25%;
+    width: 600px;
+    height: 500px;
+    position: relative;
+}
+
+/*Raspberry PI*/
+.pi{
+    border-radius: 20px;
+    width: 1400px;
+    height: 700px;
+    position: relative;
+    left: 15%;
+
+}
+
+/*Pics of Weather Station starts*/
+.wthstation{
+    border-radius: 10px;
+    width: 800px;
+    height: 1000px;
+    position: relative;
+    left: 20%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.wthstation1{
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    left: 15%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.wthstation2{
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    max-height: 1000px;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+
+/*Pics of Weather Station ends*/
+
+.sec-01, .sec-02, .sec-03, .sec-04, .sec-05{
+    background-color: black;
+    z-index: 0;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+    margin: 30px;
+    max-width: 80%;
+    left: 6%;
+}
+
+/*Copying Code Button*/
+.copycode{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    left: 20%;
+}
+
+
+/* Make sure the button and glowing effect are aligned and visible */
+.b1, .b2, .b3 {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin: 20px auto; /* Center the button */
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    color: black;
+    background-color: #00ffd5;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.b1{
+    top: 1%;
+    left: 80%;
+}
+
+/* Glow effect */
+.b1:before, .b2:before, .b3:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+/* On hover, show the glowing effect */
+.b1:hover:before, .b2:hover:before, .b3:hover:before {
+    opacity: 1;
+}
+
+/* Active state changes */
+.b1:active, .b2:active, .b3:active {
+    color: #000;
+}
+
+/* Glowing animation */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*Search Bar*/
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    background-color: none;
+    color: black;
+    border-radius: 20px;
+    height: auto;
+    position: relative;
+    left: 45%;
+    width: auto;
+    max-width: 260px;
+}
+
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #ddd;
+}
+
+#searchbar{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    height: 30px;
+    color: black;
+    position: relative;
+    left: 45%;
+}
+
+
+
