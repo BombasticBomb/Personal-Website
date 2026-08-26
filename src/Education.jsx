@@ -17,6 +17,10 @@ function Education(){
                 <h3 className="text-2xl font-bold">
                     Expected Graduation: May 2029
                 </h3>
+                <h3 className="text-2xl font-bold">
+                    Weighed GPA: 4.28
+                </h3>
+                
             
                 
 
