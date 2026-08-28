@@ -8,20 +8,40 @@ function ProjectCard({
 }) {
     return (
         <div
-            className={`w-[90%] mx-auto flex items-center justify-center gap-12 p-8
+            className={`relative w-[90%] mx-auto flex items-center justify-center gap-12 p-8
             rounded-2xl
             bg-slate-950
             border border-slate-800
+
             shadow-[15px_20px_40px_rgba(0,0,0,0.9)]
+
             transition-all duration-500
             hover:-translate-y-3
             hover:shadow-[20px_30px_60px_rgba(0,0,0,0.95)]
+
+            before:absolute
+            before:-inset-4
+            before:-z-10
+            before:rounded-3xl
+            before:bg-gradient-to-r
+            before:from-cyan-950/40
+            before:via-blue-950/50
+            before:to-indigo-950/40
+            before:blur-2xl
+            before:opacity-60
+            before:content-['']
+            before:transition-all
+            before:duration-500
+
+            hover:before:opacity-90
+            hover:before:blur-3xl
+
             ${
                 imageOnRight ? "flex-row" : "flex-row-reverse"
             }`}
         >
             <div className="w-[35%]">
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-3xl font-bold mb-4 text-slate-100">
                     {title}
                 </h2>
 
@@ -33,7 +53,12 @@ function ProjectCard({
                     href={github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                    className="
+                        text-blue-400
+                        hover:text-blue-300
+                        hover:underline
+                        transition-colors
+                    "
                 >
                     Github Repository
                 </a>
@@ -43,13 +68,27 @@ function ProjectCard({
                 <img
                     src={image1}
                     alt={`${title} Image 1`}
-                    className="w-[40vw] h-[35vh] rounded-xl object-cover"
+                    className="
+                        w-[40vw]
+                        h-[35vh]
+                        rounded-xl
+                        object-cover
+                        border border-slate-800
+                        shadow-[0_10px_30px_rgba(0,10,30,0.7)]
+                    "
                 />
 
                 <img
                     src={image2}
                     alt={`${title} Image 2`}
-                    className="w-[40vw] h-[35vh] rounded-xl object-cover"
+                    className="
+                        w-[40vw]
+                        h-[35vh]
+                        rounded-xl
+                        object-cover
+                        border border-slate-800
+                        shadow-[0_10px_30px_rgba(0,10,30,0.7)]
+                    "
                 />
             </div>
         </div>

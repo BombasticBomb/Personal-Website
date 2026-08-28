@@ -19,7 +19,7 @@ function Projects() {
                     hover:shadow-[20px_30px_80px_rgba(10,50,130,0.7)]
                 ">
                     <h2 className="text-4xl font-bold text-slate-100 mb-10">
-                        Skills + Projects
+                        Skills + Experience
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -110,14 +110,7 @@ function Projects() {
                     image2={Parts2}
                     imageOnRight={false}
                 />
-                <ProjectCard
-                    title="Custom Flight Controller Quadcopter"
-                    description="This is my Hack Club project to build a drone from scratch. The drone will have a custom flight controller built with Arduino and an MPU9250 sensor along with the BMP280 sensor for altitude, and it'll have custom PID tuning and stabilization. It'll also have a custom video transmission system made from a Raspberry Pi and USB Camera."
-                    github="https://github.com/BombasticBomb/Custom-Flight-Controller-Quadcopter-With-RaspberryPI-Cam"
-                    image1={Parts}
-                    image2={Parts2}
-                    imageOnRight={false}
-                />
+                
             </div>
         </>
     );

@@ -1,5 +1,5 @@
 import './index.css'
-import profilePic from './assets/hero.JPEG'
+import profilePic from './assets/gym.JPG'
 
 function Hero() {
     return (
