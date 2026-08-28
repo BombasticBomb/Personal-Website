@@ -13,7 +13,7 @@ function Navbar() {
                 backdrop-blur-md
             ">
                 <a
-                    href="#home"
+                    href="#Home"
                     className="
                         px-5 py-2
                         rounded-xl
@@ -29,7 +29,7 @@ function Navbar() {
                 </a>
 
                 <a
-                    href="#about"
+                    href="#Projects"
                     className="
                         px-5 py-2
                         rounded-xl
@@ -45,7 +45,7 @@ function Navbar() {
                 </a>
 
                 <a
-                    href="#services"
+                    href="#Education"
                     className="
                         px-5 py-2
                         rounded-xl
@@ -61,7 +61,7 @@ function Navbar() {
                 </a>
 
                 <a
-                    href="#contact"
+                    href="#Contact"
                     className="
                         px-5 py-2
                         rounded-xl

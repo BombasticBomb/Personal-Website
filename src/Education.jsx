@@ -2,7 +2,7 @@ import educationImage from './assets/education.jpeg'
 
 function Education() {
     return (
-        <div className="min-h-screen w-full flex items-center justify-center px-10">
+        <div id="Education" className="min-h-screen w-full flex items-center justify-center px-10">
             
             <div className="
                 w-[90%]

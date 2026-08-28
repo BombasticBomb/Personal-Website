@@ -97,7 +97,7 @@ function Projects() {
             </div>
 
             {/* Projects */}
-            <div className="w-full pb-20">
+            <div id="Projects" className="w-full pb-20">
                 <h2 className="text-4xl font-bold text-slate-100 text-center mb-10">
                     Projects
                 </h2>

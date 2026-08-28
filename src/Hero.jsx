@@ -3,7 +3,7 @@ import profilePic from './assets/gym.JPG'
 
 function Hero() {
     return (
-        <div className="min-h-screen w-full flex items-center justify-center px-10">
+        <div id="Home" className="min-h-screen w-full flex items-center justify-center px-10">
             
             <div className="
                 w-[90%]

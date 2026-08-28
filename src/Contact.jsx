@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className="w-full flex items-center justify-center py-8">
+        <div id="Contact" className="w-full flex items-center justify-center py-8">
             <div className="
                 flex items-center gap-5
                 px-5 py-3
