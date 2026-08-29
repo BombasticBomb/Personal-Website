@@ -4,7 +4,8 @@ function ProjectCard({
     github,
     image1,
     image2,
-    imageOnRight
+    imageOnRight,
+    repo
 }) {
     return (
         <div
@@ -16,36 +17,23 @@ function ProjectCard({
             shadow-[15px_20px_40px_rgba(0,0,0,0.9)]
 
             transition-all duration-500
-            hover:-translate-y-3
-            hover:shadow-[20px_30px_60px_rgba(0,0,0,0.95)]
+            hover:scale-[1.03]
+            transition-shadow
+            duration-500
+            ease-out
+            hover:shadow-[8px_12px_30px_rgba(255,140,0,0.35),0_20px_45px_rgba(255,100,0,0.2),0_0_15px_rgba(255,255,255,0.4)]
 
-            before:absolute
-            before:-inset-4
-            before:-z-10
-            before:rounded-3xl
-            before:bg-gradient-to-r
-            before:from-cyan-950/40
-            before:via-blue-950/50
-            before:to-indigo-950/40
-            before:blur-2xl
-            before:opacity-60
-            before:content-['']
-            before:transition-all
-            before:duration-500
-
-            hover:before:opacity-90
-            hover:before:blur-3xl
 
             ${
                 imageOnRight ? "flex-row" : "flex-row-reverse"
             }`}
         >
             <div className="w-[35%]">
-                <h2 className="text-3xl font-bold mb-4 text-slate-100">
+                <h2 className="text-3xl font-bold mb-4 text-white-100">
                     {title}
                 </h2>
 
-                <p className="text-lg leading-relaxed mb-4 text-slate-300">
+                <p className="text-lg leading-relaxed mb-4 text-white-300">
                     {description}
                 </p>
 
@@ -60,7 +48,7 @@ function ProjectCard({
                         transition-colors
                     "
                 >
-                    Github Repository
+                    {(repo == true ? "Check Out Project" : "")}
                 </a>
             </div>
 

@@ -3,79 +3,122 @@ import './index.css'
 
 function Navbar() {
     return (
-        <div className="fixed top-5 right-10 z-50">
-            <nav className="
-                flex items-center gap-2
-                px-3 py-2
-                rounded-2xl
-                bg-slate-950/90
-                border border-slate-800
-                shadow-[0_8px_30px_rgba(0,15,40,0.8)]
-                backdrop-blur-md
-            ">
-                <a
-                    href="#Home"
-                    className="
-                        px-5 py-2
-                        rounded-xl
-                        text-slate-300
-                        font-medium
-                        transition-all duration-300
-                        hover:bg-blue-950/50
-                        hover:text-blue-300
-                        hover:shadow-[0_0_15px_rgba(30,80,160,0.25)]
-                    "
-                >
-                    Home
-                </a>
+            <div className="fixed top-5 right-10 z-50">
+                <nav className="
+                    flex items-center gap-2
+                    px-3 py-2
+                    rounded-2xl
+                    bg-[#020b24]/80
+                    backdrop-blur-xl
+                    shadow-[0_10px_30px_rgba(0, 0, 30, 0.45)]
+                    
+                ">
+                    <a
+                        href="#Home"
+                        className="
+                            border-3
+                            px-5 py-2
+                            rounded-xl
+                            hover:scale-105
+                            text-white-400
+                            font-medium
+                            bg-white/[0.06]
+                            backdrop-blue-md
+                            border border-white/[0.12]
+                            shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(255,255,255,0.12),0_0_25px_rgba(50,80,255,0.5)]
+                            hover:border-[rgba(0, 226, 226, 0.67)]
+                            hover:-translate-y-1
+                            transition-all duration-500
+                            ease-out
+                        "
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="#Projects"
+                        className="
+                            border-3
+                            px-5 py-2
+                            rounded-xl
+                            hover:scale-105
+                            text-white-400
+                            font-medium
+                            bg-white/[0.06]
+                            backdrop-blue-md
+                            border border-white/[0.12]
+                            shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(255,255,255,0.12),0_0_25px_rgba(50,80,255,0.5)]
+                            hover:border-[rgba(0, 226, 226, 0.67)]
+                            hover:-translate-y-1
+                            transition-all duration-500
+                            ease-out
+                        "
+                    >
+                        Projects
+                    </a>
+                    <a
+                        href="#Skills"
+                        className="
+                            border-3
+                            px-5 py-2
+                            rounded-xl
+                            hover:scale-105
+                            text-white-400
+                            font-medium
+                            bg-white/[0.06]
+                            backdrop-blue-md
+                            border border-white/[0.12]
+                            shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(255,255,255,0.12),0_0_25px_rgba(50,80,255,0.5)]
+                            hover:border-[rgba(0, 226, 226, 0.67)]
+                            hover:-translate-y-1
+                            transition-all duration-500
+                            ease-out
+                        "
+                    >
+                        Skills
+                    </a>
+                    <a
+                        href="#Education"
+                        className="
+                            border-3
+                            px-5 py-2
+                            rounded-xl
+                            hover:scale-105
+                            text-white-400
+                            font-medium
+                            bg-white/[0.06]
+                            backdrop-blue-md
+                            border border-white/[0.12]
+                            shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(255,255,255,0.12),0_0_25px_rgba(50,80,255,0.5)]
+                            hover:border-[rgba(0, 226, 226, 0.67)]
+                            hover:-translate-y-1
+                            transition-all duration-500
+                            ease-out
+                        "
+                    >
+                        Education
+                    </a>
+                    <a
+                        href="#Contact"
+                        className="
+                            border-3
+                            px-5 py-2
+                            rounded-xl
+                            hover:scale-105
+                            text-white-400
+                            font-medium
+                            bg-white/[0.06]
+                            backdrop-blue-md
+                            border border-white/[0.12]
+                            shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(255,255,255,0.12),0_0_25px_rgba(50,80,255,0.5)]
+                            hover:border-[rgba(0, 226, 226, 0.67)]
+                            hover:-translate-y-1
+                            transition-all duration-100
+                            ease-out
+                        "
+                    >
+                        Contact
+                    </a>
 
-                <a
-                    href="#Projects"
-                    className="
-                        px-5 py-2
-                        rounded-xl
-                        text-slate-300
-                        font-medium
-                        transition-all duration-300
-                        hover:bg-blue-950/50
-                        hover:text-blue-300
-                        hover:shadow-[0_0_15px_rgba(30,80,160,0.25)]
-                    "
-                >
-                    Projects
-                </a>
-
-                <a
-                    href="#Education"
-                    className="
-                        px-5 py-2
-                        rounded-xl
-                        text-slate-300
-                        font-medium
-                        transition-all duration-300
-                        hover:bg-blue-950/50
-                        hover:text-blue-300
-                        hover:shadow-[0_0_15px_rgba(30,80,160,0.25)]
-                    "
-                >
-                    Education
-                </a>
-
-                <a
-                    href="#Contact"
-                    className="
-                        px-5 py-2
-                        rounded-xl
-                        text-slate-300
-                        font-medium
-                        transition-all duration-300
-                        hover:bg-blue-950/50
-                        hover:text-blue-300
-                        hover:shadow-[0_0_15px_rgba(30,80,160,0.25)]
-                    "
-                >
-                    Contact
-                </a>
             </nav>
         </div>
     );

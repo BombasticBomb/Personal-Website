@@ -1,9 +1,16 @@
 import './index.css'
-import profilePic from './assets/gym.JPG'
+import profilePic from './assets/hero.JPEG'
 
 function Hero() {
-    return (
-        <div id="Home" className="min-h-screen w-full flex items-center justify-center px-10">
+    return (<>
+        <div id="Home" className="
+        min-h-screen 
+        w-full 
+        flex 
+        items-center 
+        justify-center 
+        px-10 
+        ">
             
             <div className="
                 w-[90%]
@@ -11,12 +18,14 @@ function Hero() {
                 gap-16
                 p-12
                 rounded-3xl
-                bg-slate-950
-                border border-slate-800
-                shadow-[15px_20px_60px_rgba(0,15,40,0.8)]
-                transition-all duration-500
+                bg-[rgba(0,15,30,0.97)]
+                hover:shadow-[8px_12px_30px_rgba(255,140,0,0.35),0_20px_45px_rgba(255,100,0,0.2)]
+                border
+                hover:border-white/[0.25]
+                transition-all
+                duration-500
+                ease-out
                 hover:-translate-y-2
-                hover:shadow-[20px_30px_80px_rgba(10,50,130,0.65)]
             ">
 
                 {/* Bio */}
@@ -29,7 +38,7 @@ function Hero() {
                         I am Ahmad Farzad Taquee
                     </h1>
 
-                    <p className="mt-6 text-lg leading-relaxed text-slate-300">
+                    <p className="mt-6 text-lg leading-relaxed text-white-300">
                         I'm a high school student and developer building things
                         related to software, hardware engineering, and
                         computer-aided design. I love making things with complex mechanical designs and low-level programming
@@ -37,7 +46,7 @@ function Hero() {
                         and in the projects I do in the future.
                     </p>
 
-                    <p className="mt-4 text-lg leading-relaxed text-slate-300">
+                    <p className="mt-4 text-lg leading-relaxed text-white-300">
                         My research interest primarily focuses on astronomical aerodynamics and orbital mechanics, particularly
                         trajectory optimization for deep-space probes as well as extra-terrestrial flight. I am also interested the integration
                         of machine learning models for autonomous surface rovers as well as satellites in the atmospheres of other planets in the 
@@ -47,7 +56,7 @@ function Hero() {
 
                 {/* Image */}
                 <div className="w-[40%] flex justify-center">
-                    <img
+                    <img 
                         src={profilePic}
                         alt="Profile"
                         className="
@@ -58,18 +67,21 @@ function Hero() {
                             rounded-full
                             object-cover
                             border-2
-                            border-blue-900/50
-                            shadow-[0_0_40px_rgba(20,60,130,0.4)]
+                            border-purple-400
                             transition-all duration-500
-                            hover:scale-105
-                            hover:shadow-[0_0_60px_rgba(30,90,180,0.6)]
+                            hover:scale-[1.03]
+                            transition-shadow
+                            duration-500
+                            ease-out
+                            hover:shadow-[8px_12px_30px_rgba(255,140,0,0.35),0_20px_45px_rgba(255,100,0,0.2),0_0_15px_rgba(255,255,255,0.4)]
                         "
                     />
                 </div>
 
             </div>
+
         </div>
-    );
+    </>);
 }
 
 export default Hero

@@ -20,11 +20,15 @@ function Projects() {
                     p-12
                     rounded-3xl
                     bg-slate-950
-                    border border-slate-800
-                    shadow-[15px_20px_60px_rgba(0,15,40,0.8)]
+                    border
                     transition-all duration-500
-                    hover:-translate-y-2
-                    hover:shadow-[20px_30px_80px_rgba(10,50,130,0.7)]
+                    hover:scale-[1.03]
+                    transition-shadow
+                    duration-500
+                    ease-out
+                    border-1
+                    hover:shadow-[8px_12px_30px_rgba(255,140,0,0.35),0_20px_45px_rgba(255,100,0,0.2),0_0_15px_rgba(255,255,255,0.4)]
+                    hover:border-white/[0.25]
                 ">
                     <h2 className="text-4xl font-bold text-slate-100 mb-10">
                         Skills + Experience
@@ -105,7 +109,7 @@ function Projects() {
             </div>
 
             {/* Projects */}
-            <div id="Projects" className="w-full pb-20">
+            <div id="Projects" className="w-full pb-20 space-y-12">
                 <h2 className="text-4xl font-bold text-slate-100 text-center mb-10">
                     Projects
                 </h2>
@@ -117,9 +121,11 @@ function Projects() {
                     image1={drone1}
                     image2={drone2}
                     imageOnRight={false}
+                    repo={true}
+
                 />
                 <ProjectCard
-                    title="Ender 3 Pro Restroation"
+                    title="Ender 3 Pro Restoration"
                     description="When me and my family just moved to the United States in 2023, my dad was already here, having moved a year earlier. My dad, before
                     we arrived, found a broken 3D printer near the trash, which he brought home thinking maybe I could fix it. After we came, he showed me the 3D printer,
                     which I surprisingly found the main mechanism to be working. The only thing that wasn't working was the extruder system, which was badly broken.
@@ -129,6 +135,7 @@ function Projects() {
                     image1={ender3pro1}
                     image2={ender3pro2}
                     imageOnRight={true}
+                    repo={false}
                 />
                 <ProjectCard
                     title="Arduino Bluetooth Car (Obstacle Detection + Solar Power)"
@@ -141,6 +148,7 @@ function Projects() {
                     image1={arduinocar1}
                     image2={arduinocar2}
                     imageOnRight={false}
+                    repo={false}
                 />
                 <ProjectCard
                     title="Arduino Boat (Bluetooth Controlled)"
@@ -151,6 +159,7 @@ function Projects() {
                     image1={arduinoboat1}
                     image2={arduinoboat2}
                     imageOnRight={true}
+                    repo={false}
                 />
                 <ProjectCard
                     title="NodeMCU ESP8266 Weather Station"
@@ -163,6 +172,7 @@ function Projects() {
                     image1={weatherstation1}
                     image2={weatherstation2}
                     imageOnRight={false}
+                    repo={false}
                 />
                 
             </div>
