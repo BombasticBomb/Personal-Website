@@ -14,7 +14,7 @@ function Navbar() {
                 backdrop-blur-md
             ">
                 <a
-                    href="/home"
+                    href="#Home"
                     className="
                         px-5 py-2
                         rounded-xl
