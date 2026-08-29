@@ -14,7 +14,7 @@ function Projects() {
     return (
         <>
             {/* Skills */}
-            <div className="min-h-screen w-full flex items-center justify-center px-10 py-20">
+            <div id="Skills" className="min-h-screen w-full flex items-center justify-center px-10 py-20">
                 <div className="
                     w-[90%]
                     p-12
