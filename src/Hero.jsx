@@ -32,13 +32,16 @@ function Hero() {
                     <p className="mt-6 text-lg leading-relaxed text-slate-300">
                         I'm a high school student and developer building things
                         related to software, hardware engineering, and
-                        computer-aided design.
+                        computer-aided design. I love making things with complex mechanical designs and low-level programming
+                        that combines sensors, motors, and interactive UI. I am excited to explore more about this topics in high school
+                        and in the projects I do in the future.
                     </p>
 
                     <p className="mt-4 text-lg leading-relaxed text-slate-300">
-                        Whether I'm programming microcontrollers for robotics,
-                        working with computer vision, or building web apps,
-                        I love turning complex ideas into functional code.
+                        My research interest primarily focuses on astronomical aerodynamics and orbital mechanics, particularly
+                        trajectory optimization for deep-space probes as well as extra-terrestrial flight. I am also interested the integration
+                        of machine learning models for autonomous surface rovers as well as satellites in the atmospheres of other planets in the 
+                        solar system.
                     </p>
                 </div>
 
