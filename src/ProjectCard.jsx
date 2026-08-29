@@ -69,8 +69,8 @@ function ProjectCard({
                     src={image1}
                     alt={`${title} Image 1`}
                     className="
-                        w-[40vw]
-                        h-[35vh]
+                        w-[45vw]
+                        h-[40vh]
                         rounded-xl
                         object-cover
                         border border-slate-800
@@ -82,8 +82,8 @@ function ProjectCard({
                     src={image2}
                     alt={`${title} Image 2`}
                     className="
-                        w-[40vw]
-                        h-[35vh]
+                        w-[45vw]
+                        h-[40vh]
                         rounded-xl
                         object-cover
                         border border-slate-800

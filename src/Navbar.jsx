@@ -1,5 +1,6 @@
 import './index.css'
 
+
 function Navbar() {
     return (
         <div className="fixed top-5 right-10 z-50">
@@ -13,7 +14,7 @@ function Navbar() {
                 backdrop-blur-md
             ">
                 <a
-                    href="#Home"
+                    href="/home"
                     className="
                         px-5 py-2
                         rounded-xl
